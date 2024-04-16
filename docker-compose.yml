@@ -3,11 +3,11 @@ services:
   dev-finder-db:
     image: postgres
     restart: always
-    container_name: dev-finder-db
+    container_name: YOUR_CONTAINER_NAME_HERE
     ports:
-      - 5432:5432
+      - 5000:5432
     environment:
-      POSTGRES_PASSWORD: tobechi
+      POSTGRES_PASSWORD: YOUR_PASSWORD_HERE
     volumes:
       - postgres:/data/postgres
 
